@@ -781,8 +781,8 @@ footer{padding:3rem 5%;border-top:1px solid rgba(255,255,255,.04)}
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <div class="nav-auth">
-    <button class="nav-login" onclick="openModal('login')" aria-label="Login to Bull500 account">Log In</button>
-    <button class="nav-cta" onclick="openModal('signup')" aria-label="Create a free Bull500 trading account">Sign Up Free</button>
+    <a class="nav-login" href="https://web.bull500.com/" aria-label="Login to Bull500 account">Log In</a>
+    <a class="nav-cta" href="https://app.bull500.com/register" aria-label="Create a free Bull500 trading account">Sign Up Free</a>
   </div>
   <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
 </nav>
@@ -804,7 +804,7 @@ footer{padding:3rem 5%;border-top:1px solid rgba(255,255,255,.04)}
     </h1>
     <p>Bull500 is the fastest online trading platform in India — trade CFDs on MCX Commodities, NSE Derivatives, Cryptocurrency, US Stocks, Currency Pairs &amp; Global Indices with absolutely zero brokerage, zero commission, and sub-20ms order execution. Open your free trading account in 60 seconds.</p>
     <div class="hero-actions">
-      <button class="btn-glow" aria-label="Open a free zero brokerage trading account">Open Free Trading Account</button>
+      <a class="btn-glow" href="https://app.bull500.com/register" aria-label="Open a free zero brokerage trading account" style="display:inline-block;text-decoration:none">Open Free Trading Account</a>
       <button class="btn-ghost" aria-label="Watch Bull500 platform demo">Watch Platform Demo</button>
     </div>
   </div>
@@ -1119,7 +1119,7 @@ footer{padding:3rem 5%;border-top:1px solid rgba(255,255,255,.04)}
     <p>Join 150,000+ traders who chose Bull500 for the fastest execution, zero commissions, and transparent pricing. Start trading MCX, NSE, Crypto, Forex &amp; US Stocks in under 60 seconds.</p>
     <div class="cta-input">
       <input type="email" placeholder="Enter your email to open a free account" aria-label="Email address for free account registration" id="ctaEmail">
-      <button aria-label="Open free trading account" onclick="event.preventDefault(); openModal('signup')">Get Started Free</button>
+      <a href="https://app.bull500.com/register" aria-label="Open free trading account" style="padding:.9rem 2rem;border:none;background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--blk);font-weight:700;font-size:.9rem;font-family:var(--font-b);text-decoration:none;display:inline-flex;align-items:center">Get Started Free</a>
     </div>
   </div>
 </section>
@@ -1502,9 +1502,6 @@ function handleSignup(e) {
   }, 1500);
 }
 
-document.querySelectorAll('.btn-glow').forEach(btn => {
-  btn.addEventListener('click', () => openModal('signup'));
-});
 </script>
 </body>
 </html>
